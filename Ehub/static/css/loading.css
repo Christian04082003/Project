@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.splash-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.logo {
+  height: 25rem;
+  width: 25rem;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.main-content {
+  text-align: center;
+  max-width: 90%;
+  margin-left: 6%;
+  padding: 100px;
+  margin-top: 5%;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+h1 {
+  font-size: 23px;
+  color: #333;
+  margin: 0;
+  letter-spacing: 3px;
+  line-height: 40px;
+  font-family: 'Trebuchet MS';
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
